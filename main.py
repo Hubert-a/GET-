@@ -18,5 +18,9 @@ def get_posts(search:Optional[str]=None):
         return {
             index :NSP_Data[index]
         }
+    else :
+        return {
+            'message': 'User not found'
+        }
     return{'NSS':NSP_Data}
 
