@@ -12,15 +12,10 @@ NSP_Data ={
 
 @app.get('/getNSPData')
 def get_posts(search:Optional[str]=None):
-
     index = search
     if index in NSP_Data :
         return {
             index :NSP_Data[index]
-        }
-    else :
-        return {
-            'message': 'User not found'
         }
     return{'NSS':NSP_Data}
 
